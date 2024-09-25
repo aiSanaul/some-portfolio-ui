@@ -1,0 +1,8 @@
+#punch {
+    background: linear-gradient(to bottom, #000000 30%, #78350f 10%);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
