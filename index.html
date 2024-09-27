@@ -11,27 +11,40 @@
 
 <body>
   <div id="container" class="flex flex-col w-screen content-center bg-black p-[10px]">
-    <div id="section1" class="flex flex-col w-full h-[97.5vh] mb-3 bg-amber-900 rounded-lg justify-center overflow-hidden">
-      <div id="punch" class="flex w-full h-10 justify-center p-2">
-        <div class="bg-transparent w-full rounded-tr-[1rem]"></div>
-        <div id="hole" class="flex w-[40rem] h-10 rounded-[5rem] bg-black items-center justify-center">
-          <p class="text-white">Me</p>
-          <p class="text-white">Skils</p>
-          <p class="text-white">Projects</p>
-        </div>
-        <div class="bg-transparent w-full rounded-tl-[1rem]"></div>
-      </div>
+    <div id="punch" class="fixed z-40 flex w-full h-14 justify-center p-2">
+          <div id="hole-border" class="flex h-16">
+            <div id="hole" class="flex w-[10rem] h-16 rounded-[5rem] bg-black/40 items-center justify-center">
+              <p class="text-white">Me</p>
+              <p class="text-white">Skils</p>
+              <p class="text-white">Projects</p>
+            </div>
+          </div>
+    </div>
 
-      <div id="midd" class="flex flex-1 justify-center items-center">
-        <div id="profile" class="flex content-center justify-center bg-white rounded-[1rem] overflow-hidden">
-          <div id="photo" class="flex flex-1 w-[300px] h-[300px] bg-black justify-center p-3">
-            <div id="imag" class="w-full h-full bg-white rounded-l-lg">photo</div>
-          </div>
-          <div id="details" class="flex w-[230px] h-[300px] flex-col justify-between">
-            <div id="my-info" class="w-full h-full bg-black text-white">Info</div>
-            <div id="education" class="w-full h-full">Education</div>
+    <div id="section1" class="flex flex-col w-full h-[97.5vh] bg-[url('../dist/img/vissa.jpg')] rounded-lg justify-center overflow-hidden">
+      <div id="box" class="flex flex-col w-full h-full backdrop-blur-sm">
+        <div id="midd" class="flex flex-1 items-center justify-center">
+          <div id="profile" class="flex content-center justify-center bg-black/40 border-white/20 border-[3px] rounded-[1rem] overflow-hidden">
+            <div id="photo" class="flex flex-1 w-[300px] h-[300px] justify-center p-3">
+              <div id="imag" class="w-full h-full bg-[url('../dist/img/profile.jpg')] bg-cover border-[3px] border-white/70 rounded-l-lg"></div>
+            </div>
+            <div id="details" class="flex flex-col w-[230px] h-[300px] border-l-[3px] border-white/30 justify-between p-2">
+              <div id="my-info" class="flex flex-col w-full h-full text-white items-center justify-center">
+                <h1 class="text-[32px]">Your Name</h1>
+                <p class="text-[18px]">email@email.com</p>
+                <p class="w-max p-3 bg-black/30 rounded-[3rem] border-[3px] border-white/30">Connect</p>
+              </div>
+              <div id="education" class="flex flex-col w-full h-full text-[18px] text-white justify-center pl-5">
+                  <li>Graduation</li>
+                  <li>High School</li>
+                  <li>Secondary High</li>
+                  <li>Nursury</li>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div id="empty" class="h-14"></div>
       </div>
     </div>
 
@@ -45,7 +58,7 @@
       </div>
     </div>
 
-    <div id="section3" class="flex w-full h-[97.5vh] rounded-lg p-3 bg-amber-700">
+    <div id="section3" class="flex w-full h-[97.5vh] rounded-lg p-3 bg-amber-700 mt-3">
       <div id="projects" class="flex flex-col w-full h-full rounded-lg overflow-hidden">
         <div id="title" class="grid w-full h-10 bg-transparent justify-center content-center">
           <p class="font-bold text-xl text-white">Projects</p>
