@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <div id="container" class="flex flex-col w-screen content-center bg-black p-[10px]">
+  <div id="dynamic-island" class="flex flex-col w-screen content-center bg-black p-[10px]">
     <div id="punch" class="fixed z-40 flex w-full h-14 justify-center p-2">
           <div id="hole-border" class="flex h-16">
             <div id="hole" class="flex w-[10rem] h-16 rounded-[5rem] bg-black/40 items-center justify-center">
@@ -21,9 +21,9 @@
           </div>
     </div>
 
-    <div id="section1" class="flex flex-col w-full h-[97.5vh] bg-[url('../dist/img/vissa.jpg')] rounded-lg justify-center overflow-hidden">
-      <div id="box" class="flex flex-col w-full h-full backdrop-blur-sm">
-        <div id="midd" class="flex flex-1 items-center justify-center">
+    <div id="section1" class="flex flex-col w-full h-[97.5vh] rounded-lg justify-center overflow-hidden">
+      <div id="box" class="flex flex-col w-full h-full backdrop-blur-sm bg-white p-3">
+        <div id="midd" class="flex flex-1 items-center justify-center bg-[url('../dist/img/vissa.jpg')] rounded-lg bg-cover overflow-hidden">
           <div id="profile" class="flex content-center justify-center bg-black/40 border-white/20 border-[3px] rounded-[1rem] overflow-hidden">
             <div id="photo" class="flex flex-1 w-[300px] h-[300px] justify-center p-3">
               <div id="imag" class="w-full h-full bg-[url('../dist/img/profile.jpg')] bg-cover border-[3px] border-white/70 rounded-l-lg"></div>
@@ -43,8 +43,6 @@
             </div>
           </div>
         </div>
-
-        <div id="empty" class="h-14"></div>
       </div>
     </div>
 
@@ -59,50 +57,66 @@
     </div>
 
     <div id="section3" class="flex w-full h-[97.5vh] rounded-lg p-3 bg-amber-700 mt-3">
-      <div id="projects" class="flex flex-col w-full h-full rounded-lg overflow-hidden">
-        <div id="title" class="grid w-full h-10 bg-transparent justify-center content-center">
-          <p class="font-bold text-xl text-white">Projects</p>
-        </div>
-        <div id="cardss" class="grid grid-cols-3 grid-rows-2 w-full h-full">
-          <div id="card" class="flex w-full h-full justify-center p-1">
-            <div id="overview" class="flex flex-col bg-gray-800 w-[50%] h-full rounded-lg justify-center text-center p-2">
-              <div id="view" class="w-full h-full bg-white rounded-t-lg"></div>
-              <div id="name" class="font-bold w-full h-10 bg-black text-white rounded-b-lg content-center">Project 1
+      <div id="projects" class="flex flex-col w-full h-full rounded-lg items-center justify-center overflow-hidden">
+        <div id="pj-container" class="w-full h-full flex items-center justify-center">
+          <div id="projects-in" class="w-[70%] flex flex-col text-[14px] uppercase leading-[100%]">
+            <div id="project-header" class="opacity-50 w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer">
+              <div id="client" class="w-full">
+                <p>Project</p>
+              </div>
+              <div id="location" class="w-full">
+                <p>Location</p>
+              </div>
+              <div id="service" class="w-full">
+                <p>Category</p>
+              </div>
+              <div id="year" class="w-[30%]">
+                <p>Year</p>
               </div>
             </div>
-          </div>
-          <div id="card" class="flex w-full h-full justify-center p-1">
-            <div id="overview" class="flex flex-col bg-gray-800 w-[50%] h-full rounded-lg justify-center text-center p-2">
-              <div id="view" class="w-full h-full bg-white rounded-t-lg"></div>
-              <div id="name" class="font-bold w-full h-10 bg-black text-white rounded-b-lg content-center">Project 1
+            <div id="p-1" class="w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer group">
+              <div id="img-p1" class="absolute left-[30px] w-[200px] h-[200px] rounded-xl bg-[url('../dist/img/profile.jpg')] bg-cover invisible opacity-0 transition-all delay-250 ease-custom-ease group-hover:visible group-hover:opacity-100 group-hover:scale-75"></div>
+              <div id="client" class="w-full">
+                <p>ChatROOM</p>
+              </div>
+              <div id="location" class="w-full">
+                <p>Company</p>
+              </div>
+              <div id="service" class="w-full">
+                <p>Chatting</p>
+              </div>
+              <div id="year" class="w-[30%]">
+                <p>2005</p>
               </div>
             </div>
-          </div>
-          <div id="card" class="flex w-full h-full justify-center p-1">
-            <div id="overview" class="flex flex-col bg-gray-800 w-[50%] h-full rounded-lg justify-center text-center p-2">
-              <div id="view" class="w-full h-full bg-white rounded-t-lg"></div>
-              <div id="name" class="font-bold w-full h-10 bg-black text-white rounded-b-lg content-center">Project 1
+            <div id="p-2" class="w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer group">
+              <div id="img-p1" class="absolute left-[30px] w-[200px] h-[200px] rounded-xl bg-[url('../dist/img/profile.jpg')] bg-cover invisible opacity-0 transition-all delay-250 ease-custom-ease group-hover:visible group-hover:opacity-100 group-hover:scale-75"></div>
+              <div id="client" class="w-full">
+                <p>BOOMbox</p>
+              </div>
+              <div id="location" class="w-full">
+                <p>Company</p>
+              </div>
+              <div id="service" class="w-full">
+                <p>Music</p>
+              </div>
+              <div id="year" class="w-[30%]">
+                <p>2006</p>
               </div>
             </div>
-          </div>
-          <div id="card" class="flex w-full h-full justify-center p-1">
-            <div id="overview" class="flex flex-col bg-gray-800 w-[50%] h-full rounded-lg justify-center text-center p-2">
-              <div id="view" class="w-full h-full bg-white rounded-t-lg"></div>
-              <div id="name" class="font-bold w-full h-10 bg-black text-white rounded-b-lg content-center">Project 1
+            <div id="p-3" class="w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer group">
+              <div id="img-p1" class="absolute left-[30px] w-[200px] h-[200px] rounded-xl bg-[url('../dist/img/profile.jpg')] bg-cover invisible opacity-0 transition-all delay-250 ease-custom-ease group-hover:visible group-hover:opacity-100 group-hover:scale-75"></div>
+              <div id="client" class="w-full">
+                <p>DIYstore</p>
               </div>
-            </div>
-          </div>
-          <div id="card" class="flex w-full h-full justify-center p-1">
-            <div id="overview" class="flex flex-col bg-gray-800 w-[50%] h-full rounded-lg justify-center text-center p-2">
-              <div id="view" class="w-full h-full bg-white rounded-t-lg"></div>
-              <div id="name" class="font-bold w-full h-10 bg-black text-white rounded-b-lg content-center">Project 1
+              <div id="location" class="w-full">
+                <p>Company</p>
               </div>
-            </div>
-          </div>
-          <div id="card" class="flex w-full h-full justify-center p-1">
-            <div id="overview" class="flex flex-col bg-gray-800 w-[50%] h-full rounded-lg justify-center text-center p-2">
-              <div id="view" class="w-full h-full bg-white rounded-t-lg"></div>
-              <div id="name" class="font-bold w-full h-10 bg-black text-white rounded-b-lg content-center">Project 1
+              <div id="service" class="w-full">
+                <p>Ecommerce</p>
+              </div>
+              <div id="year" class="w-[30%]">
+                <p>2007</p>
               </div>
             </div>
           </div>
