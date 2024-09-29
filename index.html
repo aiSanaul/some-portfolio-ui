@@ -5,34 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Some Portfolio</title>
-  <link rel="stylesheet" href="../src/output.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div id="dynamic-island" class="flex flex-col w-screen content-center bg-black p-[10px]">
-    <div id="punch" class="fixed z-40 flex w-full h-14 justify-center p-2">
-          <div id="hole-border" class="flex h-16">
-            <div id="hole" class="flex w-[10rem] h-16 rounded-[5rem] bg-black/40 items-center justify-center">
-              <p class="text-white">Me</p>
-              <p class="text-white">Skils</p>
-              <p class="text-white">Projects</p>
+    <div id="punch" class="fixed z-40 flex w-full h-14 p-2">
+          <div id="hole-border" class="flex h-14">
+            <div id="hole" class="flex w-max h-14 text-white/40 rounded-[5rem] border-2 border-white/20 items-center justify-center">
+              <p>Me</p>
+              <p>Skils</p>
+              <p>Projects</p>
             </div>
           </div>
     </div>
 
     <div id="section1" class="flex flex-col w-full h-[97.5vh] rounded-lg justify-center overflow-hidden">
-      <div id="box" class="flex flex-col w-full h-full backdrop-blur-sm bg-white p-3">
-        <div id="midd" class="flex flex-1 items-center justify-center bg-[url('../dist/img/vissa.jpg')] rounded-lg bg-cover overflow-hidden">
-          <div id="profile" class="flex content-center justify-center bg-black/40 border-white/20 border-[3px] rounded-[1rem] overflow-hidden">
+      <div id="box" class="flex flex-col w-full h-full bg-[url('../dist/img/vissa.jpg')] bg-cover">
+        <div id="midd" class="flex flex-1 items-center justify-center rounded-[9px] overflow-hidden">
+          <div id="profile" class="flex content-center justify-center border-white/10 border-[3px] rounded-[1rem] overflow-hidden backdrop-blur-[3px]">
             <div id="photo" class="flex flex-1 w-[300px] h-[300px] justify-center p-3">
               <div id="imag" class="w-full h-full bg-[url('../dist/img/profile.jpg')] bg-cover border-[3px] border-white/70 rounded-l-lg"></div>
             </div>
-            <div id="details" class="flex flex-col w-[230px] h-[300px] border-l-[3px] border-white/30 justify-between p-2">
+            <div id="details" class="flex flex-col w-[230px] h-[300px] border-l-[3px] border-white/10 justify-between p-2">
               <div id="my-info" class="flex flex-col w-full h-full text-white items-center justify-center">
                 <h1 class="text-[32px]">Your Name</h1>
                 <p class="text-[18px]">email@email.com</p>
-                <p class="w-max p-3 bg-black/30 rounded-[3rem] border-[3px] border-white/30">Connect</p>
+                <p class="w-[70%] p-3 bg-black/30 rounded-[3rem] border-[3px] border-white/10 text-center m-3 hover:bg-white/30 hover:border-black/0 hover:text-black/90 hover:font-bold">Connect</p>
               </div>
               <div id="education" class="flex flex-col w-full h-full text-[18px] text-white justify-center pl-5">
                   <li>Graduation</li>
@@ -47,11 +46,11 @@
     </div>
 
     <div id="section2" class="flex w-full h-[97.5vh] rounded-lg bg-amber-600 p-3 mt-3">
-      <div id="skills" class="flex w-full h-full bg-black/60 rounded-lg overflow-hidden">
+      <div id="skills" class="flex w-full h-full bg-transparent rounded-lg overflow-hidden">
         <div id="icons" class="flex w-full h-full items-center justify-evenly text-white font-bold">
-          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem]">Java</div>
-          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem]">CSS</div>
-          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem]">HTML</div>
+          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem] transition-all ease-in-out hover:scale-125">Java</div>
+          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem] transition-all ease-in-out hover:scale-125">CSS</div>
+          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem] transition-all ease-in-out hover:scale-125">HTML</div>
         </div>
       </div>
     </div>
@@ -124,7 +123,7 @@
       </div>
     </div>
 
-    <div id="section4" class="flex flex-col w-full h-[97.5vh] rounded-lg bg-amber-500 p-3 mt-3">
+    <div id="section4" class="flex flex-col w-full h-[97.5vh] rounded-lg mt-3">
       <div id="box" class="flex flex-col flex-1 rounded-lg overflow-hidden">
         <div id="coverletter" class="grid w-full h-full bg-gray-500 justify-center content-center">
           <pre class="font-bold text-white text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Es la more des praga E nota pu moria sa.
@@ -142,6 +141,8 @@ yahoo</pre>
     </div>
   </div>
   </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </body>
 
 </html>
