@@ -1,148 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Some Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <title>some-portfolio</title>
 </head>
-
 <body>
-  <div id="dynamic-island" class="flex flex-col w-screen content-center bg-black p-[10px]">
-    <div id="punch" class="fixed z-40 flex w-full h-14 p-2">
-          <div id="hole-border" class="flex h-14">
-            <div id="hole" class="flex w-max h-14 text-white/40 rounded-[5rem] border-2 border-white/20 items-center justify-center">
-              <p>Me</p>
-              <p>Skils</p>
-              <p>Projects</p>
-            </div>
-          </div>
-    </div>
-
-    <div id="section1" class="flex flex-col w-full h-[97.5vh] rounded-lg justify-center overflow-hidden">
-      <div id="box" class="flex flex-col w-full h-full bg-[url('../dist/img/vissa.jpg')] bg-cover">
-        <div id="midd" class="flex flex-1 items-center justify-center rounded-[9px] overflow-hidden">
-          <div id="profile" class="flex content-center justify-center border-white/10 border-[3px] rounded-[1rem] overflow-hidden backdrop-blur-[3px]">
-            <div id="photo" class="flex flex-1 w-[300px] h-[300px] justify-center p-3">
-              <div id="imag" class="w-full h-full bg-[url('../dist/img/profile.jpg')] bg-cover border-[3px] border-white/70 rounded-l-lg"></div>
-            </div>
-            <div id="details" class="flex flex-col w-[230px] h-[300px] border-l-[3px] border-white/10 justify-between p-2">
-              <div id="my-info" class="flex flex-col w-full h-full text-white items-center justify-center">
-                <h1 class="text-[32px]">Your Name</h1>
-                <p class="text-[18px]">email@email.com</p>
-                <p class="w-[70%] p-3 bg-black/30 rounded-[3rem] border-[3px] border-white/10 text-center m-3 hover:bg-white/30 hover:border-black/0 hover:text-black/90 hover:font-bold">Connect</p>
-              </div>
-              <div id="education" class="flex flex-col w-full h-full text-[18px] text-white justify-center pl-5">
-                  <li>Graduation</li>
-                  <li>High School</li>
-                  <li>Secondary High</li>
-                  <li>Nursury</li>
-              </div>
-            </div>
-          </div>
+  <div id="box">
+    <div id="container">
+      <div id="title">
+        <img src="/img/title.png" alt="title">
+      </div>
+      <div id="menu">
+        <div id="date-time">
+          <p id="date"></p>
+          <p id="time"></p>
+        </div>
+        <div id="pages">
+          <p>projects</p>
+          <p>timeline</p>
+          <p>footer</p>
+        </div>
+        <div id="about">
+          <p>about</p>
+          <p>contact</p>
+        </div>
+        <div id="credits">
+          <p>credits</p>
+          <p>aino.agency</p>
+          <p>photopea.com</p>
         </div>
       </div>
-    </div>
-
-    <div id="section2" class="flex w-full h-[97.5vh] rounded-lg bg-amber-600 p-3 mt-3">
-      <div id="skills" class="flex w-full h-full bg-transparent rounded-lg overflow-hidden">
-        <div id="icons" class="flex w-full h-full items-center justify-evenly text-white font-bold">
-          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem] transition-all ease-in-out hover:scale-125">Java</div>
-          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem] transition-all ease-in-out hover:scale-125">CSS</div>
-          <div class="w-[5rem] h-[5rem] bg-black content-center text-center rounded-[1rem] transition-all ease-in-out hover:scale-125">HTML</div>
+      <div id="pj-preview">
+        <div class="project-1">
+          <div id="pj-name">project</div>
+          <img class="pj" src="img/bill.jpg" alt="bill">
+          <img class="pj" src="img/falls.jpg" alt="falls">
+        </div>
+        <div class="project-1">
+          <img class="pj" src="img/bill.jpg" alt="bill">
+          <img class="pj" src="img/falls.jpg" alt="falls">
         </div>
       </div>
-    </div>
-
-    <div id="section3" class="flex w-full h-[97.5vh] rounded-lg p-3 bg-amber-700 mt-3">
-      <div id="projects" class="flex flex-col w-full h-full rounded-lg items-center justify-center overflow-hidden">
-        <div id="pj-container" class="w-full h-full flex items-center justify-center">
-          <div id="projects-in" class="w-[70%] flex flex-col text-[14px] uppercase leading-[100%]">
-            <div id="project-header" class="opacity-50 w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer">
-              <div id="client" class="w-full">
-                <p>Project</p>
-              </div>
-              <div id="location" class="w-full">
-                <p>Location</p>
-              </div>
-              <div id="service" class="w-full">
-                <p>Category</p>
-              </div>
-              <div id="year" class="w-[30%]">
-                <p>Year</p>
-              </div>
-            </div>
-            <div id="p-1" class="w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer group">
-              <div id="img-p1" class="absolute left-[30px] w-[200px] h-[200px] rounded-xl bg-[url('../dist/img/profile.jpg')] bg-cover invisible opacity-0 transition-all delay-250 ease-custom-ease group-hover:visible group-hover:opacity-100 group-hover:scale-75"></div>
-              <div id="client" class="w-full">
-                <p>ChatROOM</p>
-              </div>
-              <div id="location" class="w-full">
-                <p>Company</p>
-              </div>
-              <div id="service" class="w-full">
-                <p>Chatting</p>
-              </div>
-              <div id="year" class="w-[30%]">
-                <p>2005</p>
-              </div>
-            </div>
-            <div id="p-2" class="w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer group">
-              <div id="img-p1" class="absolute left-[30px] w-[200px] h-[200px] rounded-xl bg-[url('../dist/img/profile.jpg')] bg-cover invisible opacity-0 transition-all delay-250 ease-custom-ease group-hover:visible group-hover:opacity-100 group-hover:scale-75"></div>
-              <div id="client" class="w-full">
-                <p>BOOMbox</p>
-              </div>
-              <div id="location" class="w-full">
-                <p>Company</p>
-              </div>
-              <div id="service" class="w-full">
-                <p>Music</p>
-              </div>
-              <div id="year" class="w-[30%]">
-                <p>2006</p>
-              </div>
-            </div>
-            <div id="p-3" class="w-full p-[2.5em] flex items-center justify-between border-b-2 border-black/15 cursor-pointer group">
-              <div id="img-p1" class="absolute left-[30px] w-[200px] h-[200px] rounded-xl bg-[url('../dist/img/profile.jpg')] bg-cover invisible opacity-0 transition-all delay-250 ease-custom-ease group-hover:visible group-hover:opacity-100 group-hover:scale-75"></div>
-              <div id="client" class="w-full">
-                <p>DIYstore</p>
-              </div>
-              <div id="location" class="w-full">
-                <p>Company</p>
-              </div>
-              <div id="service" class="w-full">
-                <p>Ecommerce</p>
-              </div>
-              <div id="year" class="w-[30%]">
-                <p>2007</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="section4" class="flex flex-col w-full h-[97.5vh] rounded-lg mt-3">
-      <div id="box" class="flex flex-col flex-1 rounded-lg overflow-hidden">
-        <div id="coverletter" class="grid w-full h-full bg-gray-500 justify-center content-center">
-          <pre class="font-bold text-white text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Es la more des praga E nota pu moria sa.
-Obcaecati minima maiores quisquam nihil perferendis quas consequatur illum illo ipsa exercitatione,
-tempora laboriosam fugit eligendi ratione facere numquam, vero, quis libero. El la more konu do i.</pre>
-        </div>
-        <div id="credits" class="w-full h-full bg-gray-400 content-center">
-          <pre class="font-bold text-white text-center">Some
-tailwind
-docs
-google
-yahoo</pre>
-        </div>
-      </div>
+      <div id="pj-timeline">project-timeline</div>
+      <div id="footer">footer</div>
     </div>
   </div>
-  </div>
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
