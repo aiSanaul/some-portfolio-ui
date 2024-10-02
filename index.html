@@ -7,47 +7,95 @@
   <title>some-portfolio</title>
 </head>
 <body>
-  <div id="box">
-    <div id="container">
-      <div id="title">
-        <img src="/img/title.png" alt="title">
+  <div class="w-screen p-3 uppercase font-medium">
+    <img src="img/title.png" alt="">
+    <div id="menu" class="flex w-full h-max justify-between">
+      <div id="date-time" class="text-[22px] font-bold">
+        <div id="date"></div>
+        <div id="time"></div>
       </div>
-      <div id="menu">
-        <div id="date-time">
-          <p id="date"></p>
-          <p id="time"></p>
+      <div id="proj" class="underline">
+        <p>projects</p>
+        <p>timeline</p>
+      </div>
+      <div id="info" class="underline">
+        <p>about</p>
+        <p>contact</p>
+      </div>
+      <div id="links" class="underline">
+        <p>credits</p>
+        <p><a href="https://aino.agency" target="_blank">aino.agency</a></p>
+        <p><a href="https://unsplash.com" target="_blank">photopea</a></p>
+      </div>
+    </div>
+    <div id="preview" class="grid grid-cols-2 w-full h-full justify-evenly">
+      <div class="p-1">
+        <p class="absolute text-[20px] bg-white/10 pl-2">no name</p>
+        <img src="img/bill.jpg" alt="">
+      </div>
+      <div class="p-1">
+        <p class="absolute text-[20px] bg-white/10 pl-2">no name</p>
+        <img src="img/falls.jpg" alt="">
+      </div>
+      <div class="p-1">
+        <p class="absolute text-[20px] bg-white/10 pl-2">no name</p>
+        <img src="img/hall.jpg" alt="">
+      </div>
+      <div class="p-1">
+        <p class="absolute text-[20px] bg-white/10 pl-2">no name</p>
+        <img src="img/window.jpg" alt="">
+      </div>
+    </div>
+    <div id="hire-me" class="flex flex-col bg-black text-white items-center justify-center mt-2 p-3">
+      <div class="flex w-full h-max text-center p-2">
+        <p class="w-full h-full text-[22px]">hire me</p>
+      </div>
+      <div class="flex w-full h-full p-1 items-center justify-center">
+        <div class="flex w-[250px] h-full p-1 border-2 border-white">
+          <img src="img/window.jpg" alt="profile">
         </div>
-        <div id="pages">
-          <p>projects</p>
-          <p>timeline</p>
-          <p>footer</p>
-        </div>
-        <div id="about">
-          <p>about</p>
+        <div class="flex flex-col w-[250px] h-full ml-2 p-1 justify-center">
+          <p>info</p>
           <p>contact</p>
         </div>
-        <div id="credits">
-          <p>credits</p>
-          <p>aino.agency</p>
-          <p>photopea.com</p>
+      </div>
+    </div>
+    <div id="timeline" class="flex flex-col w-full h-full p-4 text-center justify-center">
+      <div class="w-full h-max text-[22px]">Timeline</div>
+      <div class="flex w-full h-max justify-evenly hover:bg-black hover:text-white">
+        <p>project_name</p>
+        <p>year-</p>
+        <p>location</p>
+      </div>
+      <div class="flex w-full h-max justify-evenly hover:bg-black hover:text-white">
+        <p>project_name</p>
+        <p>year-</p>
+        <p>location</p>
+      </div>
+      <div class="flex w-full h-max justify-evenly hover:bg-black hover:text-white">
+        <p>project_name</p>
+        <p>year-</p>
+        <p>location</p>
+      </div>
+    </div>
+    <div id="footer" class="flex flex-col bg-black text-white p-3 mt-2">
+      <p class="flex w-full h-max justify-center text-[22px]">useful</p>
+      <div class="flex w-full h-full">
+        <div class="flex flex-col w-full text-center">
+          <p>tech</p>
+          <p>terms</p>
+          <p>copyrights</p>
+        </div>
+        <div class="flex flex-col w-full text-center">
+          <p>paper</p>
+          <p>written</p>
+          <p>trademark</p>
         </div>
       </div>
-      <div id="pj-preview">
-        <div class="project-1">
-          <div id="pj-name">project</div>
-          <img class="pj" src="img/bill.jpg" alt="bill">
-          <img class="pj" src="img/falls.jpg" alt="falls">
-        </div>
-        <div class="project-1">
-          <img class="pj" src="img/bill.jpg" alt="bill">
-          <img class="pj" src="img/falls.jpg" alt="falls">
-        </div>
-      </div>
-      <div id="pj-timeline">project-timeline</div>
-      <div id="footer">footer</div>
     </div>
   </div>
 
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="script.js"></script>
 </body>
 </html>
