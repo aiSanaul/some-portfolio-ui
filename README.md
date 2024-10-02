@@ -5,4 +5,4 @@ Layout view:
 ![layout](https://github.com/user-attachments/assets/e4599857-8f31-4116-b1f8-3f9fe69e5334)
 
 End-user view:
-{to be added}
+![image](https://github.com/user-attachments/assets/a2b3981a-2980-4376-8bc4-3efb8676c5f4)
